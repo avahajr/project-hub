@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./semantic/dist/semantic.min.css";
+import MakeCard from "./card-grid/MakeCard";
+import { Container } from "semantic-ui-react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const props = {
+    Header: "Test card",
+    Date: "xxxx 2023",
+    Description: "blah blah about the project!",
+    Tags: ["foo", "bar"],
+    linkTo: "https://google.com",
+  };
+  return <Container>{MakeCard(props)}</Container>;
 }
 
 export default App;
