@@ -1,8 +1,7 @@
 import React from "react";
 import "../semantic/dist/semantic.min.css";
-import { Card, Image, Label } from "semantic-ui-react";
+import { Card, Image, Label, Grid } from "semantic-ui-react";
 import pfp from "../github-pfp.jpg";
-import GenerateLabelFor from "./GenerateLabelFor";
 
 function MakeCard(props) {
   return (
@@ -19,10 +18,9 @@ function MakeCard(props) {
         </div>
         {/* Each project may have different tags, so the tags are dynamically generated. */}
         {/* <Label content="HTML" size="tiny" /> */}
-        {props.Tags.forEach((tag) => {
-          console.log("loop");
-          GenerateLabelFor(tag);
-        })}
+        {props.Tags.map((tag, index) => (
+          <Label key={index} content={tag} size="tiny" />
+        ))}
       </Card.Content>
     </Card>
   );
