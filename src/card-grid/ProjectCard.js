@@ -4,7 +4,7 @@ import { Card, Image, Label } from "semantic-ui-react";
 import pfp from "../github-pfp.jpg";
 import "./ProjectGrid.css";
 
-function MakeCard(props) {
+function ProjectCard(props) {
   return (
     <Card
       link
@@ -15,9 +15,9 @@ function MakeCard(props) {
       size="large"
     >
       <Card.Content>
-        <Card.Header content={props.ProjectName} />
-        <Card.Meta content={props.Date} />
-        <Card.Description content={props.Description} />
+        <Card.Header content={props.name} />
+        <Card.Meta content={props.date} />
+        <Card.Description content={props.description} />
       </Card.Content>
       <Card.Content extra>
         <div className="right floated author">
@@ -25,11 +25,11 @@ function MakeCard(props) {
           avahajr (GitHub)
         </div>
         {/* Each project may have different tags, so the tags are dynamically generated. */}
-        {props.Tags.map((tag, index) => (
+        {props.tags.map((tag, index) => (
           <Label key={index} content={tag} size="tiny" />
         ))}
       </Card.Content>
     </Card>
   );
 }
-export default MakeCard;
+export default ProjectCard;
