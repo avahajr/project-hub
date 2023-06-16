@@ -15,12 +15,12 @@ function Masthead(props) {
         <Segment
           color="blue"
           inverted
-          size="small"
+          size="large"
           content="Here you'll find my projects, both academic and personal."
           textAlign="center"
-          className="bigger-text"
         />
-        <FilterMenu tagList={props.tagList} />
+        <Divider hidden />
+        <FilterMenu cardList={props.cardList} />
         <Divider hidden />
       </div>
     </div>

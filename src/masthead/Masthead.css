@@ -1,67 +1,63 @@
 .card:hover {
-    cursor: pointer;
-}
-
-.masthead.segment {
-    min-height: 150px;
-    padding: .5em 0em;
+  cursor: pointer;
 }
 
 .masthead .ui.menu .ui.button {
-    margin-left: 0.5em;
+  margin-left: 0.5em;
 }
-
+.masthead .ui.container.grid .ui.small.circular.button {
+  font-weight: bolder;
+}
 .masthead h1.ui.header {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    font-size: 3em;
-    font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .masthead h2 {
-    font-size: 1.7em;
-    font-weight: normal;
+  font-size: 1.7em;
+  font-weight: normal;
 }
 .masthead .ui.container.grid {
-    max-width: 350px;
+  max-width: 350px;
 }
 
 .ui.vertical.stripe {
-    padding: 8em 0em;
+  padding: 8em 0em;
 }
 
 .ui.vertical.stripe h3 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .ui.vertical.stripe .horizontal.divider {
-    margin: 3em 0em;
+  margin: 3em 0em;
 }
 
-
 .secondary.pointing.menu .toc.item {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {
-    .ui.fixed.menu {
-        display: none !important;
-    }
+  .ui.fixed.menu {
+    display: none !important;
+  }
 
-    .masthead.segment {
-        min-height: 250px;
-    }
+  .masthead.segment {
+    min-height: 250px;
+  }
 
-    .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1em;
-    } 
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1em;
+  }
 
-    .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-    }
-    .masthead .ui.container.grid {
-        max-width: max-content;
-    }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+  .masthead .ui.container.grid {
+    max-width: max-content;
+  }
 }

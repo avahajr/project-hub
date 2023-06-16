@@ -5,15 +5,9 @@ import pfp from "../github-pfp.jpg";
 import "./ProjectGrid.css";
 
 function ProjectCard(props) {
+  // Props stand for an individual card
   return (
-    <Card
-      link
-      href={props.linkTo}
-      target="_blank"
-      color="blue"
-      fluid
-      size="large"
-    >
+    <Card link href={props.linkTo} target="_blank" fluid>
       <Card.Content>
         <Card.Header content={props.name} />
         <Card.Meta content={props.date} />
@@ -26,7 +20,7 @@ function ProjectCard(props) {
         </div>
         {/* Each project may have different tags, so the tags are dynamically generated. */}
         {props.tags.map((tag, index) => (
-          <Label key={index} content={tag} size="tiny" />
+          <Label key={index} content={tag} size="small" />
         ))}
       </Card.Content>
     </Card>

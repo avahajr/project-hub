@@ -1,16 +1,21 @@
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .grid-column {
-    display: flex;
-  }
-  
-  .grid-card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+.ui.container.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.ui.grid.column {
+  display: flex;
+}
+
+.description {
+  min-height: 3em;
+  font-size: 11pt;
+}
+
+.author {
+  font-size: medium;
+}
+.ui.label {
+  font-style: italic;
+}
