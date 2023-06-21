@@ -2,9 +2,8 @@ import React from "react";
 import { Divider, Header, Segment } from "semantic-ui-react";
 import PageMenu from "./PageMenu";
 import "./Masthead.css";
-import FilterMenu from "./FilterMenu";
 
-function Masthead(props) {
+function Masthead() {
   return (
     <div className="ui inverted blue vertical masthead left aligned segment">
       <div className="ui container">
@@ -19,9 +18,6 @@ function Masthead(props) {
           content="Here you'll find my projects, both academic and personal."
           textAlign="center"
         />
-        <Divider hidden />
-        <FilterMenu cardList={props.cardList} />
-        <Divider hidden />
       </div>
     </div>
   );

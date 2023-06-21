@@ -23,18 +23,6 @@
   max-width: 350px;
 }
 
-.ui.vertical.stripe {
-  padding: 8em 0em;
-}
-
-.ui.vertical.stripe h3 {
-  font-size: 2em;
-}
-
-.ui.vertical.stripe .horizontal.divider {
-  margin: 3em 0em;
-}
-
 .secondary.pointing.menu .toc.item {
   display: none;
 }
