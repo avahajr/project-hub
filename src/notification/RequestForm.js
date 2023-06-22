@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { Divider, Container } from "semantic-ui-react";
 import Toast from "./Toast";
 
-import "../semantic/dist/semantic.min.css";
+import "semantic-ui-css/semantic.min.css";
+
 function RequestForm() {
   const [showToast, setShowToast] = useState(false);
 

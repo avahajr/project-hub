@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../semantic/dist/semantic.min.css";
+import "semantic-ui-css/semantic.min.css";
+
 import { Card, Image, Label, Modal } from "semantic-ui-react";
 import pfp from "../github-pfp.jpg";
 import "./ProjectCard.css";
