@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
-import './Masthead.css';
+import "./Masthead.css";
+import "../semantic/dist/semantic.min.css";
 
 export default class PageMenu extends Component {
   state = { activeItem: "projects" };
@@ -13,21 +14,13 @@ export default class PageMenu extends Component {
     return (
       <div>
         <Menu pointing secondary inverted color="blue">
-          <Menu.Item
-            name="about me"
-            active={activeItem === "about me"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="projects"
-            active={activeItem === "projects"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="resume"
-            active={activeItem === "resume"}
-            onClick={this.handleItemClick}
-          />
+          <a href="../../index.html" target="_blank">
+            <Menu.Item name="about me" />
+          </a>
+          <Menu.Item name="projects" active={activeItem === "projects"} />
+          <a href="../../05-24-2023_Resume.pdf" target="_blank">
+            <Menu.Item name="resume" />
+          </a>
         </Menu>
       </div>
     );
