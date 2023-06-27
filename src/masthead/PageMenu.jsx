@@ -13,12 +13,14 @@ export default class PageMenu extends Component {
 
     return (
       <div>
-        <Menu pointing secondary inverted color="blue">
-          <a href="../../index.html" target="_blank">
-            <Menu.Item name="about me" />
-          </a>
+        <Menu pointing inverted secondary>
+          <Menu.Item href="https://avahajr.github.io" name="about me" />
           <Menu.Item name="projects" active={activeItem === "projects"} />
-          <a href="../../05-24-2023_Resume.pdf" target="_blank">
+          <a
+            href="https://avahajr.github.io/05-24-2023_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Menu.Item name="resume" />
           </a>
         </Menu>
