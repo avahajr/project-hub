@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Button, Divider } from "semantic-ui-react";
-import "./CardFilterer.css";
+// import "./CardFilterer.css";
 import cardData from "./cardData";
 import CardGrid from "./CardGrid";
 
@@ -13,6 +13,7 @@ function CardFilterer() {
   allTags = new Set(allTags);
   allTags = Array.from(allTags).sort();
   allTags.unshift("All");
+
   return (
     <div>
       <div className="ui inverted blue vertical masthead left aligned segment filter">
@@ -25,6 +26,7 @@ function CardFilterer() {
               inverted
               basic
               circular
+              active={tag === "All"}
             />
           ))}
         </Grid>
@@ -37,9 +39,5 @@ function CardFilterer() {
     </div>
   );
 }
-
-// function setActiveTags(activeTags, tagToAdd) {
-//   return activeTags.concat(tagToAdd);
-// }
 
 export default CardFilterer;

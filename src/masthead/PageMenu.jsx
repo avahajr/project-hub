@@ -15,11 +15,16 @@ export default class PageMenu extends Component {
     return (
       <div>
         <Menu pointing inverted secondary>
-          <Menu.Item href="https://avahajr.github.io" name="about me" />
+          <Menu.Item
+            href="https://avahajr.github.io"
+            active={activeItem === "about me"}
+            name="about me"
+          />
           <Menu.Item name="projects" active={activeItem === "projects"} />
 
           <Menu.Item
             href="https://avahajr.github.io/classes.html"
+            active={activeItem === "classes"}
             name="classes"
           />
           <Menu.Item position="right">
@@ -28,6 +33,7 @@ export default class PageMenu extends Component {
               content="Download resume"
               as="a"
               href="https://avahajr.github.io/05-24-2023_Resume.pdf"
+              target="_blank"
               download
               color="white"
             />

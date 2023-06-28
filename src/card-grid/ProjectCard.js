@@ -30,6 +30,7 @@ function CardContents(props) {
         <Card.Header>
           {props.name}
           {props.isPrivate ? <HoverLock hovered={hovered} /> : <></>}
+          {props.isAvaPick ? <AvaAward /> : <></>}
         </Card.Header>
         <Card.Meta content={props.date} />
         <Card.Description content={props.description} />
@@ -45,6 +46,14 @@ function CardContents(props) {
         ))}
       </Card.Content>
     </Card>
+  );
+}
+
+function AvaAward() {
+  return (
+    <Label ribbon="right">
+      <em data-emoji=":medal:" class="medium" />
+    </Label>
   );
 }
 

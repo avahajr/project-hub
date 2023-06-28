@@ -8,9 +8,15 @@ function Masthead() {
     <div className="ui inverted blue vertical masthead left aligned segment">
       <div className="ui container">
         <Divider hidden />
-        <Header as="h2" content="Ava Hajratwala" inverted />
+        <Header as="h1" content="Ava Hajratwala" inverted />
         <PageMenu />
-        <Header as="h1" content="Projects" textAlign="center" inverted />
+        <Header
+          as="h1"
+          className="emphasis"
+          content="Projects"
+          textAlign="center"
+          inverted
+        />
         <Segment
           color="blue"
           inverted

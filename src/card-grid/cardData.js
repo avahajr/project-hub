@@ -8,6 +8,7 @@ const cardData = [
     linkTo: "https://github.com/avahajr/avahajr.github.io",
     tags: ["HTML", "CSS", "ReactJS"],
     isPrivate: false,
+    isAwarded: false,
   },
   {
     name: "RL Stick-shift sim",
@@ -16,6 +17,7 @@ const cardData = [
       "A 3D Unity game/simulation where an AI learns to drive a manual car from scratch using reinforcement learning.",
     linkTo: "https://github.com/avahajr/Racing-Game",
     tags: ["AI", "Unity", "C#"],
+    isAvaPick: true,
     isPrivate: false,
   },
   {
@@ -26,6 +28,7 @@ const cardData = [
     linkTo: "",
     tags: ["AI", "Python"],
     isPrivate: true,
+    isAwarded: false,
   },
   {
     name: "Dynamic web server and client",
@@ -35,6 +38,7 @@ const cardData = [
     tags: ["C", "HTML"],
     linkTo: "",
     isPrivate: true,
+    isAwarded: false,
   },
 ];
 

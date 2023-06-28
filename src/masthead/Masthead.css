@@ -2,23 +2,20 @@
   cursor: pointer;
 }
 
-.masthead .ui.menu .ui.button {
-  margin-left: 0.5em;
+div.right:nth-child(4) {
+  padding-bottom: 1.3em !important;
 }
+
 .masthead .ui.container.grid .ui.small.circular.button {
   font-weight: bolder;
 }
-.masthead h1.ui.header {
+.masthead h1.ui.header.emphasis {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   font-size: 3em;
   font-weight: bold;
 }
 
-.masthead h2 {
-  font-size: 1.7em;
-  font-weight: normal;
-}
 .masthead .ui.container.grid {
   max-width: 350px;
 }
