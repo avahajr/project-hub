@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
 import "./Masthead.css";
-import "../semantic/dist/semantic.min.css";
+// import "../semantic/dist/semantic.min.css";
 
 export default class PageMenu extends Component {
   state = { activeItem: "projects" };

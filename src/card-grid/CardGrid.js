@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "semantic-ui-react";
 import ProjectCard from "./ProjectCard";
 import cardData from "./cardData";
-import "semantic-ui-css/semantic.min.css";
+// import "semantic-ui-css/semantic.min.css";
 
 // A function that takes as input a card array and an array of active tags
 // and returns all the elements from the card array whose 'tags' field
