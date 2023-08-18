@@ -11,7 +11,6 @@ function App() {
       <Masthead />
       <CardFilterer />
       <Divider hidden />
-
       <Footer />
     </div>
   );

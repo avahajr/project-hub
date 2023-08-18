@@ -22,11 +22,6 @@ export default class PageMenu extends Component {
           />
           <Menu.Item name="projects" active={activeItem === "projects"} />
 
-          <Menu.Item
-            href="https://avahajr.github.io/classes.html"
-            active={activeItem === "classes"}
-            name="classes"
-          />
           <Menu.Item position="right">
             <Button
               className="animate__animated animate__pulse animate__infinite animate__slower"
